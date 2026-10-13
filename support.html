@@ -4,91 +4,91 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Stille · 支持 Support</title>
-<style>
-  :root { --bg:#0b0b0a; --ink:#ece6da; --dim:#9a958b; --accent:#d8392b; }
-  body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.7 -apple-system, "PingFang SC", "Helvetica Neue", sans-serif; }
-  main { max-width:680px; margin:0 auto; padding:48px 20px 80px; }
-  h1 { font-size:26px; letter-spacing:.04em; margin:0 0 4px; }
-  h1 span { color:var(--accent); }
-  h2 { font-size:17px; margin:36px 0 8px; }
-  .dim { color:var(--dim); font-size:14px; }
-  hr { border:0; border-top:1px solid #2a2926; margin:56px 0; }
-  a { color:var(--ink); }
-</style>
+<meta name="description" content="Stille 定影的常见问题和联系方式。FAQ and contact for Stille.">
+<link rel="icon" href="icon.png">
+<link rel="stylesheet" href="site.css">
 </head>
 <body>
-<main>
+<header class="top">
+  <a class="mark" href="index.html"><b>STILLE</b><span>定影</span></a>
+  <nav><a href="support.html" aria-current="page">支持</a><a href="privacy.html">隐私政策</a><a href="#en">English</a></nav>
+</header>
 
-<h1>Stille <span>·</span> 定影</h1>
-<p class="dim">支持 · <a href="#en">English</a> · <a href="privacy.html">隐私政策</a></p>
+<main>
+<p class="eyebrow">SUPPORT</p>
+<h1>支持</h1>
+<p class="meta">常见问题和联系方式</p>
 
 <h2>联系我</h2>
-<p>遇到问题、有建议，或者想反馈拍出来的照片哪里不对，都可以写信给我。请附上手机型号、iOS 版本，以及当时用的模式（自动 / 定影）。</p>
-<p>邮箱：<a href="mailto:changxu0220@gmail.com">changxu0220@gmail.com</a></p>
+<p>遇到问题、有建议，或者觉得拍出来的照片哪里不对，都可以写信给我。请附上手机型号、iOS 版本，以及当时是自动曝光还是手动曝光。</p>
+<div class="contact"><p><span class="k">邮箱</span><a href="mailto:changxu0220@gmail.com">changxu0220@gmail.com</a></p></div>
 
 <h2>常见问题</h2>
 
-<p><strong>自动和定影两个模式有什么区别？</strong><br>
-自动模式是 iPhone 自己的成像，定影只提供拨盘和界面，照片和系统相机一样。定影模式从拍摄到成片都是我们自己的：按一下快门连拍一组 RAW，在手机上合成为一张底片，再由定影自己的显影引擎冲洗出来。想要画质、想手动曝光、想要 DNG 底片，用定影模式。</p>
+<div class="qa"><h3>定影是怎么出片的？</h3>
+<p>只有一个拍摄模式。按下快门，定影拿到原始数据，再由自己的显影引擎冲洗成照片，不用 iPhone 自带的成片风格。在支持 ProRAW 的 Pro 机型上，自动曝光用苹果的 ProRAW 底片；手动曝光（快门或 ISO 任一手动），以及没有 ProRAW 的机型，会连拍一组 RAW、对齐后合成一张更干净的底片。28 / 35 / 50mm 用多帧超分辨率，只合成传感器真实拍到的细节，不靠 AI 生成。</p></div>
 
-<p><strong>定影模式按下快门后为什么要等几秒？能退出吗？</strong><br>
-合成一组连拍需要几秒，在后台进行，可以接着拍下一张。请等右下角的"合成中"消失再退出 app。</p>
+<div class="qa"><h3>按下快门后要等吗？能接着拍吗？</h3>
+<p>合成和显影在后台进行，可以接着拍下一张。左下角小图上有一个小点时，表示这张还在处理，处理完会自动存进相册。处理完之前请不要从后台强行关掉 app。</p></div>
 
-<p><strong>为什么调了手动快门或 ISO，照片变成了 12MP？</strong><br>
-这是 iOS 的限制：在自动模式下，48MP 只在全自动时可用。定影模式不受这个限制，手动快门、ISO 下仍能得到 48MP 级的照片。</p>
+<div class="qa"><h3>存什么格式？怎么留 RAW 底片？</h3>
+<p>默认存 HEIF。打开 RAW 按钮后，会同时存一张 DNG 底片，可以在任何支持 DNG 的软件里后期。</p></div>
 
-<p><strong>定影模式存什么格式？怎么留 DNG？</strong><br>
-默认存 10 位 HEIF。在定影模式下点左上角的格式按钮切到 HEIF+RAW，会同时存一张合成后的 DNG 底片（48MP 约 42MB，27MP 约 25MB），可以在任何支持 DNG 的软件里后期。</p>
+<div class="qa"><h3>彩色和黑白有什么区别？</h3>
+<p>黑白和彩色用同一套曝光和影调，黑白再稍微加一点反差。黑白可以选滤镜（无、黄、红、绿），默认是黄，效果类似黑白胶片前面加的滤色镜。</p></div>
 
-<p><strong>「三脚架」开关是做什么的？</strong><br>
-把手机固定在三脚架上时打开它，定影会改用全分辨率帧合成，照片更干净。手持也能用，但可能偏软。</p>
+<div class="qa"><h3>为什么没有光圈调节？</h3>
+<p>iPhone 的镜头光圈是固定的。</p></div>
 
-<p><strong>为什么没有光圈调节？</strong><br>
-iPhone 的镜头光圈是固定的。</p>
+<div class="qa"><h3>在哪里看拍好的照片？</h3>
+<p>点左下角的小图会打开系统"照片" app。定影不在 app 里另做相册。</p></div>
 
-<p><strong>有些功能我的手机上用不了？</strong><br>
-定影模式的多帧合成需要能拍 RAW、内存足够的 iPhone。内存较小或拍不了 RAW 的机型，定影模式会用单张按同样方式显影（手动曝光时为 12MP）；内存中等的机型多帧合成固定输出 27MP。自动模式下的 ProRAW 格式需要支持 ProRAW 的 Pro 机型。</p>
+<div class="qa"><h3>哪些 iPhone 能用？</h3>
+<p>需要 iOS 18 或更新。支持 iPhone 12 Pro 及之后的所有 Pro 机型，以及 iPhone 16 及之后的机型（包括 iPhone 16e、iPhone Air）。iPhone 14、15 标准款可能只能部分使用。更早的非 Pro 机型、iPhone 11 Pro 和 iPhone SE 拿不到定影需要的原始数据，打开后会提示无法出片。</p></div>
 
-<p><strong>Stille 会收集我的数据吗？</strong><br>
-不会。Stille 不联网，详见<a href="privacy.html">隐私政策</a>。</p>
+<div class="qa"><h3>Stille 会收集我的数据吗？</h3>
+<p>不会。Stille 不联网，详见<a href="privacy.html">隐私政策</a>。</p></div>
 
-<hr>
-
-<section id="en" lang="en">
-<h1>Stille</h1>
-<p class="dim">Support · <a href="privacy.html#en">Privacy Policy</a></p>
+<section class="lang-split" id="en" lang="en">
+<p class="eyebrow">SUPPORT</p>
+<h1>Support</h1>
+<p class="meta">FAQ and contact</p>
 
 <h2>Contact</h2>
-<p>For problems, suggestions, or photos that don't look right, please get in touch. Include your iPhone model, iOS version and the mode you were using (Auto / Develop).</p>
-<p>Email: <a href="mailto:changxu0220@gmail.com">changxu0220@gmail.com</a></p>
+<p>For problems, suggestions, or photos that don't look right, please get in touch. Include your iPhone model, iOS version, and whether you were using auto or manual exposure.</p>
+<div class="contact"><p><span class="k">Email</span><a href="mailto:changxu0220@gmail.com">changxu0220@gmail.com</a></p></div>
 
 <h2>FAQ</h2>
 
-<p><strong>What's the difference between Auto and Develop?</strong><br>
-Auto is the iPhone's own imaging; Stille only adds its dials and interface, and the photos match the system camera. Develop is ours from capture to finished photo: one press captures a burst of RAW frames, merges them on your iPhone into a single negative, and develops that negative with Stille's own engine. For image quality, manual exposure or a DNG negative, use Develop.</p>
+<div class="qa"><h3>How does Stille make a photo?</h3>
+<p>There is one shooting mode. When you press the shutter, Stille takes the raw sensor data and develops it with its own engine instead of the iPhone's built-in look. On Pro models with ProRAW, auto exposure uses Apple's ProRAW negative. With manual exposure (shutter speed or ISO set by hand), and on iPhones without ProRAW, Stille captures a burst of RAW frames, aligns them and merges them into a cleaner negative. At 28 / 35 / 50 mm it uses multi-frame super-resolution, built only from detail the sensor actually recorded, with no AI generation.</p></div>
 
-<p><strong>Why does Develop take a few seconds after I press the shutter? Can I leave the app?</strong><br>
-Merging a burst takes a few seconds. It runs in the background, so you can keep shooting. Please wait until the "Merging" indicator in the corner disappears before leaving the app.</p>
+<div class="qa"><h3>Do I have to wait after pressing the shutter? Can I keep shooting?</h3>
+<p>Merging and developing run in the background, so you can keep shooting. A small dot on the thumbnail at the bottom left means that photo is still being processed; it is saved to your library automatically when done. Please don't force-quit the app until processing has finished.</p></div>
 
-<p><strong>Why do my photos drop to 12 MP when I set shutter speed or ISO manually?</strong><br>
-This is an iOS limitation: in Auto mode, 48 MP is only available in full auto. Develop mode isn't limited this way — you still get 48 MP-class photos with manual shutter speed and ISO.</p>
+<div class="qa"><h3>What format does Stille save? How do I keep the RAW negative?</h3>
+<p>HEIF by default. Turn on the RAW button to also save a DNG negative, which opens in any software that supports DNG.</p></div>
 
-<p><strong>What format does Develop save? How do I keep the DNG?</strong><br>
-10-bit HEIF by default. In Develop mode, tap the format button at the top left and choose HEIF+RAW to also save the merged DNG negative (about 42 MB at 48 MP, 25 MB at 27 MP), which opens in any software that supports DNG.</p>
+<div class="qa"><h3>What's the difference between Color and Black &amp; White?</h3>
+<p>Both looks share the same exposure and tone curve; Black &amp; White adds a little more contrast. It lets you pick a filter (none, yellow, red or green); yellow is the default, like the color filters used with black-and-white film.</p></div>
 
-<p><strong>What does the Tripod switch do?</strong><br>
-Turn it on when the phone is on a tripod. Develop then merges full-resolution frames for a cleaner photo. It also works handheld, but results may be softer.</p>
+<div class="qa"><h3>Why is there no aperture control?</h3>
+<p>iPhone lenses have a fixed aperture.</p></div>
 
-<p><strong>Why is there no aperture control?</strong><br>
-iPhone lenses have a fixed aperture.</p>
+<div class="qa"><h3>Where do I see my photos?</h3>
+<p>Tap the thumbnail at the bottom left to open the Photos app. Stille doesn't keep a separate gallery.</p></div>
 
-<p><strong>Some features aren't available on my iPhone?</strong><br>
-The multi-frame merge in Develop mode needs an iPhone that can capture RAW and has enough memory. On iPhones with less memory or no RAW capture, Develop uses a single frame developed the same way (12 MP with manual exposure); on mid-memory iPhones the merge outputs 27 MP. The ProRAW format in Auto mode needs a Pro model with ProRAW support.</p>
+<div class="qa"><h3>Which iPhones are supported?</h3>
+<p>iOS 18 or later. Works on iPhone 12 Pro and all later Pro models, and on iPhone 16 and later (including iPhone 16e and iPhone Air). iPhone 14 and 15 (non-Pro) may have limited support. Earlier non-Pro models, iPhone 11 Pro and iPhone SE can't provide the raw data Stille needs, and the app tells you so when you open it.</p></div>
 
-<p><strong>Does Stille collect my data?</strong><br>
-No. Stille has no network access — see the <a href="privacy.html#en">Privacy Policy</a>.</p>
+<div class="qa"><h3>Does Stille collect my data?</h3>
+<p>No. Stille has no network access. See the <a href="privacy.html#en">Privacy Policy</a>.</p></div>
 </section>
-
 </main>
+
+<footer>
+  <span>© 2026 Chang Xu</span>
+  <span><a href="index.html">首页</a> · <a href="privacy.html">隐私政策</a></span>
+</footer>
 </body>
 </html>
