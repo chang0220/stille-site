@@ -25,7 +25,8 @@
 <h2>用到的权限</h2>
 <ul>
   <li><strong>相机</strong>：用来取景和拍照。画面只在手机上处理。</li>
-  <li><strong>照片（仅添加）</strong>：只用来把你拍的照片存进系统相册。Stille 不会读取相册里已有的照片。</li>
+  <li><strong>照片（仅添加）</strong>：用来把你拍的照片存进系统相册。</li>
+  <li><strong>照片（读取，可选）</strong>：只有你在看图页点"显示以前拍的照片"时才会请求，用来在 app 里翻看以前用 Stille 拍的照片。Stille 只显示自己拍的照片（按存进相册时记下的编号去找），不读取、不上传相册里别的照片。选"完全访问"能看到从带这项功能的版本起拍的全部（更早的照片当时没记编号，认不出来）；选"限制访问"只看得到授权以后拍的。不给这项权限也能正常拍照和存相册。</li>
 </ul>
 <p>Stille 不申请定位权限，所以照片里不会写入位置信息。照片的元数据里是拍摄参数（快门、ISO、镜头等）、手机型号和软件名。</p>
 
@@ -33,6 +34,7 @@
 <ul>
   <li>你的设置（语言、镜头、格式、斑马纹和直方图开关等），存在 app 自己的本地设置里。</li>
   <li>这次打开 app 以来拍的照片（最多 100 张），会在 app 自己的缓存里各留一份，用来点开左下角的小图查看；下次打开 app 时清空。</li>
+  <li>每张存进相册的照片，相册给它的编号（一串字符，不含照片内容），用来在看图页找到 Stille 自己拍的照片。</li>
   <li>拍完马上切到别的 app 时，还没处理完的照片底片会先暂存在 app 自己的存储里，处理完就删除；如果 app 在后台被系统关掉，下次打开时会把它处理完、存进相册，再删除。</li>
   <li>运行记录：拍照和处理过程中的关键事件（时间、拍摄参数、处理用时、出错信息），用来排查问题，最多几百 KB，旧的自动删除。不含照片和位置。只有你在设置里点"导出诊断信息"、自己发给别人，它才会离开你的手机。</li>
   <li>在锁定屏幕上拍的照片，会先暂存在系统给的临时位置，解锁后存进相册，存好就删除。</li>
@@ -63,7 +65,8 @@
 <h2>Permissions</h2>
 <ul>
   <li><strong>Camera</strong>: used to show the viewfinder and take photos. Images are processed on the device only.</li>
-  <li><strong>Photos (add only)</strong>: used only to save the photos you take to your photo library. Stille never reads your existing photos.</li>
+  <li><strong>Photos (add only)</strong>: used to save the photos you take to your photo library.</li>
+  <li><strong>Photos (read, optional)</strong>: requested only if you tap "Show Earlier Photos" in the viewer, so you can browse photos you took with Stille. Stille shows only its own photos (found by the identifiers it noted when saving them) and never reads or uploads anything else in your library. With Full Access you'll see every Stille photo taken since the version that added this feature (earlier ones weren't tagged and can't be recognised); with Limited Access, only those taken after you grant it. Shooting and saving work without this permission.</li>
 </ul>
 <p>Stille does not request location access, so no location is written into your photos. Photo metadata contains capture settings (shutter speed, ISO, lens, etc.), the device model and the software name.</p>
 
@@ -71,6 +74,7 @@
 <ul>
   <li>Your settings (language, lens, format, zebra and histogram toggles, etc.), in the app's local preferences.</li>
   <li>Copies of the photos you've taken since opening the app (up to 100), kept in the app's cache so you can view them by tapping the thumbnail. They are cleared the next time you open the app.</li>
+  <li>For each photo saved to your library, the identifier your library assigned to it (a string of characters, no image content), used to find Stille's own photos in the viewer.</li>
   <li>If you switch away right after taking a photo, its unfinished negative is held in the app's own storage until processing finishes, then deleted. If iOS closes the app in the background, it is finished and saved to your library the next time you open the app, then deleted.</li>
   <li>An activity log of key events while shooting and processing (time, capture settings, processing time, errors), used for troubleshooting. It is at most a few hundred KB, older entries are removed automatically, and it contains no photos or location. It only leaves your phone if you tap "Export Diagnostics" in Settings and send it yourself.</li>
   <li>Photos taken from the Lock Screen are held briefly in a temporary location provided by iOS, then saved to your library after you unlock and deleted.</li>
